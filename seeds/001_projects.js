@@ -6,18 +6,18 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex("projects").insert([
         {
-          name: "Flexbox Project",
-          description: "Use Flexbox",
+          name: "Ronda Rousey",
+          description: "Fight",
           completed: false
         },
         {
-          name: "React Project",
-          description: "Use React to create Facebook 2",
+          name: "Eating Project",
+          description: "Eating video prank",
           completed: false
         },
         {
-          name: "Node Project",
-          description: "Create seeds in Node",
+          name: "Basketball",
+          description: "Basketball game",
           completed: false
         }
       ]);
