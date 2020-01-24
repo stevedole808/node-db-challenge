@@ -1,16 +1,10 @@
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex("project_resources")
-    .truncate()
-    .then(function() {
-      // Inserts seed entries
-      return knex("project_resources").insert([
-        { project_id: 1, resource_id: 3 },
-        { project_id: 2, resource_id: 1 },
-        { project_id: 2, resource_id: 3 },
-        { project_id: 3, resource_id: 2 },
-        { project_id: 3, resource_id: 1 },
-        { project_id: 3, resource_id: 3 }
-      ]);
-    });
+  return knex("projects").insert([
+    { name: "learn node", description: "study and practice node and express" },
+    { name: "learn ruby", description: "study and practice ruby and rails" },
+    {
+      name: "learn tailwind",
+      description: "study and practice tailwind css tool"
+    }
+  ]);
 };
